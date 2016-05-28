@@ -1,18 +1,15 @@
 ﻿@model WebApplication1_RazorLearning.Models.Product
 
 @{
-    Layout = null;
+    ViewBag.Title = "Demoxpression";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>DemoExpression</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+<table>
+    <thead>
+        <tr><th>Property</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Name</td><td>@Model.Name</td></tr>
+        <tr><td>Price</td><td>@Model.Price</td></tr>
+        <tr><td>Stock level</td><td>@ViewBag.ProductCount</td></tr>
+    </tbody>
+</table>
