@@ -1,4 +1,5 @@
-﻿@model WebApplication1_RazorLearning.Models.Product[]
+﻿@using WebApplication1_RazorLearning.Models
+@model Product[]
 
 @{
     ViewBag.Title = "DemoArray";
@@ -9,7 +10,7 @@
     <table> 
         <thead><tr><th>Product</th><th>Price</th></tr></thead>
         <tbody>
-            @foreach (WebApplication1_RazorLearning.Models.Product p in Model)
+            @foreach (Product p in Model)
             {
                 <tr>
                     <td>@p.Name</td>
